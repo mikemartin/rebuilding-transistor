@@ -1,0 +1,16 @@
+sections:
+  main:
+    display: Main
+    fields:
+      monthly:
+        type: integer
+        display: Monthly
+      yearly:
+        type: integer
+        display: Yearly
+      features:
+        type: list
+        display: Features
+taxonomies: false
+title: Plan
+create_title: Plan

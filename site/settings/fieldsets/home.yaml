@@ -1,0 +1,6 @@
+display: Home
+hide: true
+taxonomies: false
+fields:
+  headline:
+    type: text
