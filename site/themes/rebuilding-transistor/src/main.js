@@ -1,8 +1,16 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue        from 'vue'
+import Components from './components';
 
 Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
+
+window.vm     = new Vue({
+	el: '#app',
+  components: Components,
+
+  methods: {
+    selectPlan(plan) {
+      this.$emit('select', plan)
+    }
+  },
+});
