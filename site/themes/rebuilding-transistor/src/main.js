@@ -1,12 +1,16 @@
 import Vue        from 'vue'
-import Components from './components';
+import PlanCard from './components/PlanCard'
+import ScheduleToggle from './components/ScheduleToggle'
 
 Vue.config.productionTip = false
 
 
 window.vm     = new Vue({
 	el: '#app',
-  components: Components,
+  components: {
+    PlanCard,
+    ScheduleToggle,
+  },
 
   methods: {
     selectPlan(plan) {
