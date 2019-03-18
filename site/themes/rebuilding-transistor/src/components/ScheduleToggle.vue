@@ -17,7 +17,10 @@
 
 <script>
   export default {
-    props: ['value'],
+    name: 'ScheduleToggle',
+    props: {
+      value: String,
+    },
     computed: {
       isMonthly() {
         return this.value === 'monthly'

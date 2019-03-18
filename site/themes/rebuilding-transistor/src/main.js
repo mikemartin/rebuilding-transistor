@@ -13,4 +13,11 @@ window.vm     = new Vue({
       this.$emit('select', plan)
     }
   },
+
+  data() {
+    return {
+      schedule: 'monthly',
+      selectedPlan: 'Starter',
+    }
+  },
 });

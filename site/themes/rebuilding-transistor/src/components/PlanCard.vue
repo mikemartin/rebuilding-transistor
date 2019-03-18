@@ -27,14 +27,16 @@
 
 <script>
   export default {
-    props: [
-      'schedule',
-      'name',
-      'monthly',
-      'yearly',
-      'selected',
-      'features'
-    ],
+    name: 'PlanCard',
+    
+    props: {
+      schedule: String,
+      name: String,
+      monthly: String,
+      yearly: String,
+      selected: String,
+      feature: Array
+    },
     computed: {
       price() {
         return {
@@ -48,7 +50,7 @@
 
 
 <style>
-@tailwind preflight;
-@tailwind components;
-@tailwind utilities;
+  @tailwind preflight;
+  @tailwind components;
+  @tailwind utilities;
 </style>
